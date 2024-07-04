@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> film site </title>
+
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="js/app.js"></script>
+    <script src="js/Bootstrap.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body style="font-family:sahel;">
+    <!-- navbar start -->
+    <nav class="navbar-custom navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-size: 20px;" href="#">منو</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">خانه &ensp;<i
+                                class="fa-sharp fa-solid fa-house" style="font-size:20px;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-2.html">فیلم ها&ensp;&ensp;<i class="fa-sharp fa-solid fa-film"
+                                style="font-size: 20px;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تماس با ما&ensp;<i class="fa-solid fa-envelope"
+                                style="font-size: 20px;"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            &ensp;&ensp;&ensp;سریال ها
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> جدید</a></li>
+                            <li><a class="dropdown-item" href="#"> پر بازدید</a></li>
+                            <li><a class="dropdown-item" href="#"> در حال پخش</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+
+    <!-- <maim class="main"> 
+        <div>vbb</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>f
+        <div>8</div>
+    </maim>-->
+
+    <div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-xs-12 col-md-12 col-sm-12">
+                <!--col-8 slider -->
+                <div class="row">
+                    <div class="container-slider me-5">
+                        <div class="slide">
+                            <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+
+                                <div class="content">
+
+                                    <div class="name">Switzerland</div>
+                                    <div class="des">dbhd dddddddd</div>
+
+                                    <button>See More</button>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(/image/photo-1.png);">
+                                <div style="color: yellow;" class="content">
+                                    <div class="name">Finland</div>
+                                    <div class="des">dhbdbgf</div>
+                                    <button class="bin button-1">See More</button>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+                                <div class="content">
+                                    <div class="name">Iceland</div>
+                                    <div class="des">gdbddb</div>
+                                    <button class="bin bottun-2 ">See More</button>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+
+                                <div class="content">
+
+                                    <div class="name">Australia</div>
+                                    <div class="des">gfdfdb</div>
+                                    <button>See More</button>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+                                <div class="content">
+                                    <div class="name">Netherland</div>
+                                    <div class="des">dgbhdbhd！</div>
+                                    <button>See More</button>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+                                <div class="content">
+                                    <div class="name">Ireland</div>
+
+                                    <div class="des">ddbghdd</div>
+                                    <button>See More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="prev"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="next"><i class="fa-solid fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        let next = document.querySelector('.next')
+                        let prev = document.querySelector('.prev')
+
+                        next.addEventListener('click', function () {
+                            let items = document.querySelectorAll('.item')
+                            document.querySelector('.slide').appendChild(items[0])
+                        })
+                        prev.addEventListener('click', function () {
+                            let items = document.querySelectorAll('.item')
+                            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+                        })
+                    </script>
+                </div>
+                <!-- end slider -->
+                <div class="container ps-5 me-4">
+                    <div class="fild-1 row  ">
+                        <p class="text mt-3"><b>جستجوی پیشرفته</b></p>
+                        <div class="fild-2 row ">
+                            <div class="col-lg-3"><select class="form-select text-end"
+                                    aria-label="Default select example">
+                                    <option selected>ژانر</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select></div>
+                            <div class="col-lg-3 "><select class="form-select" aria-label="Default select example">
+                                    <option selected>نمره منتقدین</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select></div>
+                            <div class="col-lg-3 "><select class="form-select" aria-label="Default select example">
+                                    <option selected>رده سنین</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select></div>
+                            <div class="col-lg-3 "><select class="form-select" aria-label="Default select example">
+                                    <option selected>کشور</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select></div>
+                        </div>
+
+                        <div class=" fild-3 row">
+                            <div class="col-lg-3 ">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>امتیاز imdb</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>سال ساخت</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> ترتیب نمایش</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>رده سنین</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div> <button type="submit" name submit class="= but-search  ">جستجو </button></div>
+                    </div>
+
+                    <!--start  row card movie -->
+                    <div class="news-all container">
+                        <div class="row ">
+                            <div class="col-12">
+                                <h4 class="m-h4 lp_hglt_cls_اخبار_سینمای_جهان">اخبار سینمای جهان</h4>
+                                <a href="https://www.google.com" class="more-news"> مشاهده لیست</a>
+                            </div>
+
+                        </div>
+                        <div class="news-1 row">
+                            <div class="  col-md-2">
+                                <a href="https://www.google.com" class="new" title="lorem i lihylki kyhkyh lhl lhil lh">
+                                    <img src="/image/news1.jpg" alt="new-1">
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <h5>در این مطلب برسی کنید و اطلاعات بدست آورید</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, obcaecati? Ipsum
+                                    fuga
+                                    eveniet voluptatum eius beatae?</p>
+                            </div>
+                        </div>
+                        <div class=" news-2 row">
+                            <div class="col-2">
+                                <a href="https://www.google.com"><img src="/image/news2.jpg" alt="news-2"></a>
+                            </div>
+                            <div class="col-8">
+                                <h5>به برسی آن بپردازید و برسی کنید</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quas </p>
+                            </div>
+                            <div class="col-12">
+                                <p class="n-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eaque ipsa
+                                    cupiditate nisi nemo minima recusandae minus. Mollitia nemo vitae saepe sequi velit
+                                    eum
+                                    maxime!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" options-box clearfix">
+                        <div class="row fild-1 p-1 ">
+                            <div class="col-md-6">
+                                <h6 class="m-h6"> آخرین غیلم های های ارسال شده در سایت </h6>
+                            </div>
+                            <div class="d-flex justify-content-end col-6">
+                                <a href="https://www.google.com" class="">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- start card 1 film -->
+                        <div class=" img-film mt-2 border border-secondary rounded-3 card-film row p-2">
+                            <div style="display: flex; justify-content:space-between;" class=" mt-3 ">
+                                <a href="index-2.html"><p style="margin: auto 0 auto 0;"> <i
+                                        class="fa-sharp fa-solid fa-circle-play"></i>دانلود فیلم Spasibo dedu z pobedu
+                                    2019
+                                </p></a>
+                                <a href="index.html" title="اطلاعات بیشتر" target="_blank"> <span><i
+                                            style="font-size:3rem;" class=" fa-brands fa-imdb"></i></span>
+                                </a>
+                            </div>
+                            <hr class="mt-3 mb-4">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4 mb-3  col-xs-12 "><a href="index-2.html"><img class="image img-film img-fluid" src="/image/film-1.jpg" alt=""></a></div>
+                                <div class="col-8 ">
+                                    <ul class="meta-h">
+                                        <li>کیفیت : WEB-DL 1080p</li>
+                                        <li>ژانر : خانوادگی | کمدی</li>
+                                        <li>سال انتشار : 2019</li>
+                                        <li>میزان آراء : 17 نفر</li>
+                                        <li>ستارگان : Aleksey Onezhen, Egor Beroev, Kesou Khagba</li>
+                                    </ul>
+                                    <p id="kholase">والدین یک پسر بچه ترسو تصمیم میگیرند او را برای مدتی پیش پدربزرگش
+                                        بفرستند که در روستا زندگی میکند، پدربزرگ او داستان ها و ماجراهای خودش را در جنگ
+                                        جهانی برای او تعریف میکند و او در آنجا دوستانی پیدا می...</p>
+                                </div>
+                                <div class="row border-secondary rounded-3">
+                                    <aside> <button style="float: left;" class=" rounded-3 " type="submit"><a href="index-2.html"></a> ادامه
+                                            مطلب</button></aside>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1film -->
+                        <!-- card2 -->
+                        <div class=" img-film mt-2 border border-secondary rounded-3 card-film row p-2">
+                            <div style="display: flex; justify-content:space-between;" class=" mt-3 ">
+                                <p style="margin: auto 0 auto 0;"> <i
+                                        class="fa-sharp fa-solid fa-circle-play"></i>دانلود فیلم Spasibo dedu z pobedu
+                                    2019
+                                </p>
+                                <a href="https://www.google.com" title="اطلاعات بیشتر" target="_blank"> <span><i
+                                            style="font-size:3rem;" class=" fa-brands fa-imdb"></i></span>
+                                </a>
+                            </div>
+                            <hr class="mt-3 mb-4">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4 mb-3  col-xs-12"><img class="image img-film img-fluid " src="/image/film-1.jpg" alt=""></div>
+                                <div class="col-sm-12 col-lg-8 col-xs-12">
+                                    <ul class="meta-h">
+                                        <li>کیفیت : WEB-DL 1080p</li>
+                                        <li>ژانر : خانوادگی | کمدی</li>
+                                        <li>سال انتشار : 2019</li>
+                                        <li>میزان آراء : 17 نفر</li>
+                                        <li>ستارگان : Aleksey Onezhen, Egor Beroev, Kesou Khagba</li>
+                                    </ul>
+                                    <p id="kholase">والدین یک پسر بچه ترسو تصمیم میگیرند او را برای مدتی پیش پدربزرگش
+                                        بفرستند که در روستا زندگی میکند، پدربزرگ او داستان ها و ماجراهای خودش را در جنگ
+                                        جهانی برای او تعریف میکند و او در آنجا دوستانی پیدا می...</p>
+                                </div>
+                                <div class="row border-secondary rounded-3">
+                                    <aside> <button style="float: left;" class=" rounded-3 " type="submit"> ادامه
+                                            مطلب</button></aside>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class=" img-film mt-2 border border-secondary rounded-3 card-film row p-2">
+                            <div style="display: flex; justify-content:space-between;" class=" mt-3 ">
+                                <p style="margin: auto 0 auto 0;"> <i
+                                        class="fa-sharp fa-solid fa-circle-play"></i>دانلود فیلم Spasibo dedu z pobedu
+                                    2019
+                                </p>
+                                <a href="https://www.google.com" title="اطلاعات بیشتر" target="_blank"> <span><i
+                                            style="font-size:3rem;" class=" fa-brands fa-imdb"></i></span>
+                                </a>
+                            </div>
+                            <hr class="mt-3 mb-4">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4 mb-3  col-xs-12 mb-3"><img class="image img-film img-fluid" src="/image/film-1.jpg" alt=""></div>
+                                <div class="col-8 offset-sm-12">
+                                    <ul class="meta-h">
+                                        <li>کیفیت : WEB-DL 1080p</li>
+                                        <li>ژانر : خانوادگی | کمدی</li>
+                                        <li>سال انتشار : 2019</li>
+                                        <li>میزان آراء : 17 نفر</li>
+                                        <li>ستارگان : Aleksey Onezhen, Egor Beroev, Kesou Khagba</li>
+                                    </ul>
+                                    <div id="kholase">
+                                        <p>والدین یک پسر بچه ترسو تصمیم میگیرند او را برای مدتی پیش پدربزرگش بفرستند که
+                                            در روستا زندگی میکند، پدربزرگ او داستان ها و ماجراهای خودش را در جنگ جهانی
+                                            برای او تعریف میکند و او در آنجا دوستانی پیدا می...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class=" btn btn-primary rounded-3">
+                                    <aside> <button style="float: left;" class=" rounded-3 " type="submit"> ادامه
+                                            مطلب</button></aside>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- start col 4 -->
+            <div class="col-xl-4 col-lg-4 col-xs-12 col-md-12 col-sm-12">
+                <div class="container">
+                    <div class="card">
+                        <img src="/image/Instagram1.png" class="card-img-top" alt="...">
+                        <img src="/image/Twitter1.png  " class="card-img-top" alt="...">
+                        <img src="/image/Telegram2.png" alt="" class="">
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            دانلود دوبله فارسی
+                            <label class="text-center" for="button"><i
+                                    class="fa-solid fa-microphone-lines "></i></label>
+                        </div>
+
+                    </div>
+                </div>
+                <section style="text-align:center;" id="ads"><a href="http://google.com/"> <img
+                            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                            alt="ads"> </a></section>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <hr>
+    <h6>hello hi how<span class="bg-warning " style="font-family: sahel;">experts</span> and be ready for the market
+    </h6>
+    <p id="hello">deserunt repellendus. ipsum <em class="bg-primary">consectetur</em></p>
+
+
+    <footer style="display:grid; align-items: center; background-color: #a5aecc;" id="site-footer">
+        <p style="margin:auto;"> CopyRight © 2020 </p>
+        <a style="margin:auto;" href="tell:09123456789"> شماره تماس: 09123456789 </a>
+    </footer>
+
+</body>
+
+</html>
